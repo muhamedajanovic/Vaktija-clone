@@ -7,6 +7,21 @@ locationDiv.addEventListener("click", function () {
   pageDiv.classList.toggle("dark-mode");
 });
 
+let slideIndex = 0;
+let slides = document
+  .getElementsByClassName("slideshow-container")[0]
+  .getElementsByTagName("img");
+setInterval(function () {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.opacity = 1;
+}, 3000);
+
 fetch("https://api.vaktija.ba/vaktija/v1/110")
   .then((response) => response.json())
   .then((data) => {
