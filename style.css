@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+.page {
+  color: #4a4a4a;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dark-mode {
+  background-color: #1f2227;
+  color: #ffffff;
+}
+
+.location {
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 700;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.prayer-times {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+}
+
+.prayer-times .prayerTime {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.prayer-times .prayerName {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
