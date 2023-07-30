@@ -12,7 +12,7 @@ document
   });
 
 function fetchPrayerTimes() {
-  fetch("https://api.vaktija.ba/vaktija/v1/110")
+  fetch("https://api.vaktija.ba/vaktija/v1/77")
     .then((response) => response.json())
     .then((data) => {
       const prayerTimes = data;
